@@ -8,8 +8,10 @@
   <title>JS PARTIE 2 EXO 1</title>
 </head>
 <body>
-<img src="Assets/img/Voiture 1.png" onmouseover="this.src='Assets/img/Voiture 2.png';" onmouseout="this.src='Assets/img/Voiture 2.png';"
-/>
+<!-- version la moins propre-->
+<img src="Assets/img/Voiture 1.png" onmouseover="this.src='Assets/img/Voiture 2.png';" onmouseout="this.src='Assets/img/Voiture 1.png';"/>
+<!-- la bonne version-->
+<img src="Assets/img/Voiture 1.png" onmouseover="changeImage()" onmouseout="originImage()" id="greenCar"/>
 
 <!-- script-->
   <script src="Assets/JS/script.js"></script>
